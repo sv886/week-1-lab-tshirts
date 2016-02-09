@@ -69,6 +69,7 @@ body {
   padding-top: 15px;
   padding-bottom: 17px;
   margin: 0 auto;
+  cursor: default;
 }
 
 .shirt_options i {
@@ -215,6 +216,7 @@ a.tooltips_swatch {
   position: relative;
   display: inline;
   text-decoration: none;
+  cursor: default;
 }
 
 a.tooltips_swatch span {
