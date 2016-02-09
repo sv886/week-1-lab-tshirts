@@ -50,6 +50,14 @@ body {
   border: 3px solid #5CA4D7;
   border-left: none;
   border-top: none;
+  position: relative;
+}
+
+.shirt_options a {
+  display: inline-block;
+  border-left: none;
+  border-top: none;
+  position: relative;
 }
 
 .shirt_options h1 {
@@ -120,17 +128,137 @@ body {
   color: #FFFFFF;
 }
 
+
 .shirt_container i:hover {
   background-color: #5CA4D7;
   color: #FFFFFF;
 }
+
+.blue_sq i:hover {
+  background-color: #5CA4D7;
+  color: #5CA4D7;
+}
+
 
 .pink_sq i:hover {
   background-color: #5CA4D7;
   color: #D280A9;
 }
 
+
 .yellow_sq i:hover {
   background-color: #5CA4D7;
   color: #D9B081;
+}
+
+
+
+/* popups */
+
+a.tooltips {
+  position: relative;
+  display: inline;
+  text-decoration: none;
+}
+
+a.tooltips span {
+  position: absolute;
+  width: 100px;
+  height: 225px;
+  color: #FFFFFF;
+  background: #5CA4D7;
+  border: 2px solid #5CA4D7;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 2px;
+  left: -12px;
+  bottom: 18px;
+}
+
+a.tooltips span:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -12px;
+  width: 0; height: 0;
+  border-top: 12px solid #FFFFFF;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+}
+
+a.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #FFFFFF;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.9;
+  bottom: 18px;
+  left: 50%;
+  margin-left: -12px;
+  z-index: 999;
+}
+
+
+
+a.tooltips_swatch {
+  position: relative;
+  display: inline;
+  text-decoration: none;
+}
+
+a.tooltips_swatch span {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  color: #FFFFFF;
+  background: #5CA4D7;
+  border: 2px solid #5CA4D7;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 2px;
+}
+
+a.tooltips_swatch span:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -12px;
+  width: 0; height: 0;
+  border-top: 12px solid #FFFFFF;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+}
+
+a.tooltips_swatch span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #FFFFFF;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+a:hover.tooltips_swatch span {
+  visibility: visible;
+  opacity: 0.9;
+  bottom: 18px;
+  left: 50%;
+  margin-left: -12px;
+  z-index: 99;
 }
